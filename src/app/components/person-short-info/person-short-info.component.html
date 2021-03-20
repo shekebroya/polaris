@@ -1,0 +1,26 @@
+<div class="short-info">
+    <div class="short-info-content" *ngFor="let p of personShortInfo">
+        <ul>
+            <li>{{ p.person.lastname }}</li>
+            <li>{{ p.person.firstname }}</li>
+            <li>{{ p.person.gender }} </li> |
+        </ul>
+        <ul>
+            <li>{{ p.person.birthday | date: 'dd.MM.yyyy'}} ({{personAge}})</li> |
+        </ul>
+        <ul *ngIf="p.married">
+            <li>{{ p.marriedTo.lastname }}</li>
+            <li>{{ p.marriedTo.firstname }}</li>
+            <li>{{ p.marriedTo.gender }}</li> |
+        </ul>
+        <ul *ngIf="p.married">
+            <li>{{ p.marriedTo.birthday | date: 'dd.MM.yyyy'}} ({{marriedToAge}})</li> |
+        </ul>
+        <ul>
+            <li>{{ p.address.zip }}</li>
+            <li>{{ p.address.city }}, </li>
+            <li>{{ p.address.street }}</li>
+            <li>{{ p.address.streetnumber }}</li>
+        </ul>
+    </div>
+</div>

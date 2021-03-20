@@ -1,0 +1,12 @@
+<div class="overview">
+    <h3>Übersicht</h3>
+    <div class="overview-content">
+        <div class="overview-item" *ngFor=" let o of overview">
+            <h4 class="title">{{o.title}} <span>{{o.icon}} </span></h4>
+            <p class="text" *ngIf="o.text.length > 0">{{o.text}}</p>
+            <ul class="list" *ngIf="o.lists.length > 0">
+                <li *ngFor="let l of o.lists" [ngClass]="{'triangle': l.icon === 'triangle'}">{{l.list}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

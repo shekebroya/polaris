@@ -1,0 +1,17 @@
+.main-navigation {
+    display: flex;
+}
+ul {
+    margin: 20px;
+    display: inline;
+}
+li {
+    padding: 10px 40px 0px;
+    display: inline-block;
+    font-size: 15px;
+    text-transform : uppercase;
+}
+a {
+    color: white;
+    text-decoration: none;
+}

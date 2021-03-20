@@ -1,0 +1,29 @@
+.overview-content {
+    display: flex;
+    flex-wrap: wrap;
+    Font-size: 14px;
+}
+.overview-item {
+    width: 15vw;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px;
+    min-height: 15vw;
+    display: flex;
+    flex-flow: column nowrap;
+}
+p, ul {
+    font-size: 12px;
+}
+h4 {
+    margin-bottom: 12px;
+}
+ul {
+    margin-top: auto;
+    list-style: disc;
+    margin-left: 16px;
+}
+.triangle {
+    list-style: circle;
+}

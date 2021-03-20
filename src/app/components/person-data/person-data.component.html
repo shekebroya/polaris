@@ -1,0 +1,12 @@
+<h3>Personendaten</h3>
+<div class="person-data">
+    <div class="person-content" *ngFor="let personDa of personDataGroup">
+        <dl class="person-item" *ngFor="let p of personDa">
+            <dt>{{p.title}}</dt>
+            <dd *ngIf="p.type ==='default'">{{p.subtitle}}</dd>
+            <dd *ngIf="p.type ==='format'">{{p.subtitle | date: 'dd.MM.yyyy'}}</dd>
+            <dd *ngIf="p.type ==='date'">{{p.subtitle}} ({{p.date | date: 'MMM y'}})</dd>
+            <dd *ngIf="p.type ==='birthday'">{{p.subtitle | date: 'dd.MM.yyyy'}} ({{ageService.getAge(p.subtitle)}})</dd>
+        </dl>
+    </div>
+</div>

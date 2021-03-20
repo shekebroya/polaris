@@ -1,0 +1,17 @@
+.short-info {
+    padding: 10px;
+}
+.short-info-content  {
+    background-color: #337D91;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 4px;
+}
+ul, li {
+    display: inline-block;
+}
+li {
+    padding: 0 3px;
+    font-size: 12px
+    ;
+}
